@@ -3,7 +3,7 @@ import os
 import aws_cdk
 from dotenv import load_dotenv
 
-from deployment.cdk_python_example_stack import CdkPythonExampleStack
+from deployment.lambda_python_example_stack import LambdaPythonExampleStack
 
 load_dotenv()
 
@@ -14,9 +14,9 @@ env = aws_cdk.Environment(
     region=os.environ.get("CDK_DEFAULT_REGION"),
 )
 
-CdkPythonExampleStack(
+LambdaPythonExampleStack(
     app,
-    "CdkPythonExampleStack",
+    "LambdaPythonExampleStack",
     env=env,
 )
 

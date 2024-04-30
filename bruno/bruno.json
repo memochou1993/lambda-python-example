@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "cdk-python-example",
+  "name": "lambda-python-example",
   "type": "collection",
   "ignore": [
     "node_modules",
